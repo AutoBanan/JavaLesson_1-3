@@ -50,7 +50,7 @@ public class Homework1 {
                 System.out.println("You enter wrong length type!");
         }
     }
-
+//    4.	Напишите программу, реализующую популярную телевизионную игру “Кто хочет стать миллионером”.
     public static void victorine(){
         System.out.println("Enter 1 if you want to start");
         Scanner in = new Scanner(System.in);
