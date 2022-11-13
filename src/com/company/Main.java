@@ -21,5 +21,7 @@ public class Main {
         homework1.pairNumber();
         homework1.sumNumbers();
         homework1.changeLengthValues();
+        homework1.victorine();
+        homework1.guryAvg();
     }
 }
