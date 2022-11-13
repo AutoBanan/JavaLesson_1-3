@@ -27,5 +27,7 @@ public class Main {
 
         Homework2 homework2 = new Homework2();
         homework2.reverceArray();
+        homework2.naturalSum();
+        homework2.factorial();
     }
 }
