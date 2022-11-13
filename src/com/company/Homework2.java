@@ -133,7 +133,12 @@ public class Homework2 {
                 countNumber+=1;
                 System.out.println(currentNumber+" "+countNumber);
             }
-            else {
+            else if (i==numbers.length-1 && numbers[i]!=currentNumber) {
+                countNumber=1;
+                currentNumber=numbers[i];
+                System.out.println(currentNumber+" "+countNumber);
+            }
+            else if(currentNumber!=numbers[numbers.length-1]){
                 System.out.println(currentNumber+" "+countNumber);
                 currentNumber=numbers[i];
                 countNumber=1;
