@@ -21,7 +21,7 @@ public class Homework2 {
         System.out.println("Enter first number");
         Scanner in = new Scanner(System.in);
         int numbFirst = in.nextInt();
-        System.out.println("enter second number");
+        System.out.println("Enter second number");
         int numbSecond = in.nextInt();
         System.out.println(numbFirst+" "+numbSecond);
         int summ=0;
@@ -44,11 +44,24 @@ public class Homework2 {
         System.out.println("Enter the number");
         Scanner in = new Scanner(System.in);
         int numb = in.nextInt();
+        int fact=1;
         if (numb<0){
             System.out.println("Entered wrong number");
         }
-        else if (numb=0){
+        else if (numb==0){
             System.out.println("Factorial of 0 = 0");
         }
+        else if (numb>0){
+            int i=1;
+            while(i<=numb){
+                fact=fact*i;
+                i+=1;
+            }
+            System.out.println("Factorial of "+numb+" = "+fact);
+        }
+    }
+//    4.	Пользователь вводит с клавиатуры число. Программа должна показать, сколько в числе цифр. Число вводится целиком в одну переменную. Например, пользователь ввел число 12345. Программа вывела на экран сообщение о том, что в числе 5 цифр.
+    public static void numCount(){
+
     }
 }
