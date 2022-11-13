@@ -17,11 +17,16 @@ public class Main {
 //        Lesson3_Arrays_Loops lesson3 = new Lesson3_Arrays_Loops();
 //        lesson3.getAverageFromArray();
 //        lesson3.findAverage();
-        Homework1 homework1 = new Homework1();
-        homework1.pairNumber();
-        homework1.sumNumbers();
-        homework1.changeLengthValues();
-        homework1.victorine();
-        homework1.guryAvg();
+
+//        Homework1 homework1 = new Homework1();
+//        homework1.pairNumber();
+//        homework1.sumNumbers();
+//        homework1.changeLengthValues();
+//        homework1.victorine();
+//        homework1.guryAvg();
+
+        Homework2 homework2 = new Homework2();
     }
 }
+
+pu
