@@ -29,5 +29,7 @@ public class Main {
         homework2.reverceArray();
         homework2.naturalSum();
         homework2.factorial();
+        homework2.numCount();
+        homework2.reverseNumber();
     }
 }

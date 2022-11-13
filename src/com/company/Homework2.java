@@ -44,7 +44,7 @@ public class Homework2 {
         System.out.println("Enter the number");
         Scanner in = new Scanner(System.in);
         int numb = in.nextInt();
-        int fact=1;
+        double fact=1;
         if (numb<0){
             System.out.println("Entered wrong number");
         }
@@ -57,11 +57,43 @@ public class Homework2 {
                 fact=fact*i;
                 i+=1;
             }
-            System.out.println("Factorial of "+numb+" = "+fact);
+            System.out.printf("Factorial of %d = %.0f \n",numb, fact);
         }
     }
 //    4.	Пользователь вводит с клавиатуры число. Программа должна показать, сколько в числе цифр. Число вводится целиком в одну переменную. Например, пользователь ввел число 12345. Программа вывела на экран сообщение о том, что в числе 5 цифр.
     public static void numCount(){
+        System.out.println("Enter the number");
+        Scanner in=new Scanner(System.in);
+        int number=in.nextInt();
+        String strNumb=Integer.toString(number);
+        System.out.println("количество символов в числе "+strNumb.length());
 
+        int sum=0;
+        int i=0;
+        while(i<strNumb.length()){
+            int currentNumb=Integer.parseInt(String.valueOf(strNumb.charAt(i)));
+            sum=sum+currentNumb;
+            i++;
+        }
+        System.out.println("Final sum "+sum+"\n");
+    }
+
+//    5.	Пользователь вводит с клавиатуры число. Необходимо перевернуть его и вывести на экран.
+//    Например, пользователь ввел 12345, программа должна вывести на экран 54321
+    public static void reverseNumber(){
+        System.out.println("Enter number to reverse");
+        Scanner in=new Scanner(System.in);
+        int num=in.nextInt();
+        String strNum=Integer.toString(num);
+        String reverseNum="";
+        int i=strNum.length()-1;
+        while(i>=0){
+            reverseNum+=strNum.charAt(i);
+            i-=1;
+        }
+        int newNum=Integer.parseInt(reverseNum);
+        System.out.println(newNum);
     }
 }
+
+
