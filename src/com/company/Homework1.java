@@ -1,6 +1,5 @@
 package com.company;
 
-import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -67,7 +66,6 @@ public class Homework1 {
                     if (ans1==1){
                         summ=summ+100;
                         System.out.println("Correct answer you won "+summ);
-
                     }
                     else{
                         System.out.println("Game over");
@@ -114,20 +112,20 @@ public class Homework1 {
         }
 
     }
+//    5.	Соревнование по фигурному катанию. 8 судей судят. И выставляют оценки от 1 до 10 рандомно.
+//    Подсчитать среднюю оценку с округлением до 2-х знаков после запятой.
+//    Стандартной библиотекой (Math) не пользоваться
     public static void guryAvg(){
         Random rand = new Random();
-        int grade =0; // rand.nextInt(10) +1;
+        int grade; // rand.nextInt(10) +1;
         double gradeSumm= 0.0D;
         for (int i=0;i<8; i++){
             grade = rand.nextInt(10) +1;
             gradeSumm=gradeSumm+grade;
         }
-        DecimalFormat df = new DecimalFormat("###.##");
+//        DecimalFormat df = new DecimalFormat("###.##");
         double avgGrade=gradeSumm/8;
-//        int g=3;
-//        int y=2;
-//        double divide=g/y;
-        System.out.printf("%.2f", divide);
+//        System.out.printf("%.2f", divide);
         System.out.printf("\n %.2f", avgGrade);
 //        System.out.printf("\n %.3f", avgGrade);
 //        System.out.println("\n "+(df.format(avgGrade)));
