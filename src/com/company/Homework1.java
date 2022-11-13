@@ -49,4 +49,67 @@ public class Homework1 {
                 System.out.println("You enter wrong length type!");
         }
     }
+
+    public static void victorine(){
+        System.out.println("Enter 1 if you want to start");
+        Scanner in = new Scanner(System.in);
+        int num=in.nextInt();
+        int summ=0;
+        int i=1;
+        int unfiredsum=0;
+        if (num==1){
+            switch (i){
+                case 1:
+                    System.out. println("Who is the first president of Ukraine?\n 1. Mikhailo Grushevskiy\n 2.Leonid Kuchma\n 3.Leonid Kravshuuk\n 4.Viktor Ushenko");
+                    int ans1= in.nextInt();
+                    if (ans1==1){
+                        summ=summ+100;
+                        System.out.println("Correct answer you won "+summ);
+
+                    }
+                    else{
+                        System.out.println("Game over");
+                        break;
+                    }
+                case 2:
+                    System.out. println("President of Russia\n 1.Baiden \n 2.Putin\n 3.Zelenski\n 4. Viktor Ushenko");
+                    ans1= in.nextInt();
+                    if (ans1==2){
+                        summ=summ+100;
+                        System.out.println("Correct answer you won "+summ);
+                    }
+                    else{
+                        System.out.println("Game over");
+                        break;
+                    }
+                case 3:
+                    System.out. println("Biggest mount\n 1.Elbrus \n 2.Goverla\n 3.Everest\n 4. K2");
+                    ans1= in.nextInt();
+                    if (ans1==3){
+                        summ=summ+100;
+                        unfiredsum=unfiredsum+summ;
+                        System.out.println("Correct answer you won "+summ);
+                    }
+                    else{
+                        System.out.println("Game over");
+                        break;
+                    }
+                case 4:
+                    System.out. println("Biggest Sea \n 1.Atlantic \n 2.North\n 3.Silent\n 4. indian");
+                    ans1= in.nextInt();
+                    if (ans1==3){
+                        summ=summ+100;
+                        System.out.println("Correct answer you won "+summ);
+                    }
+                    else{
+                        System.out.println("Game over but you won " + unfiredsum);
+                        break;
+                    }
+            }
+        }
+        else{
+            System.out.println("You wont start");
+        }
+
+    }
 }

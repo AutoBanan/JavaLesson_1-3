@@ -18,8 +18,9 @@ public class Main {
 //        lesson3.getAverageFromArray();
 //        lesson3.findAverage();
         Homework1 homework1 = new Homework1();
-        homework1.pairNumber();
-        homework1.sumNumbers();
-        homework1.changeLengthValues();
+//        homework1.pairNumber();
+//        homework1.sumNumbers();
+//        homework1.changeLengthValues();
+//        homework1.victorine();
     }
 }
