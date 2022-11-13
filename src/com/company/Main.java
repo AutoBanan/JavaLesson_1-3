@@ -26,10 +26,11 @@ public class Main {
 //        homework1.guryAvg();
 
         Homework2 homework2 = new Homework2();
-        homework2.reverceArray();
-        homework2.naturalSum();
-        homework2.factorial();
-        homework2.numCount();
-        homework2.reverseNumber();
+//        homework2.reverceArray();
+//        homework2.naturalSum();
+//        homework2.factorial();
+//        homework2.numCount();
+//        homework2.reverseNumber();
+        homework2.countArrNambers();
     }
 }

@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Homework2 {
@@ -93,6 +95,52 @@ public class Homework2 {
         }
         int newNum=Integer.parseInt(reverseNum);
         System.out.println(newNum);
+    }
+//6.	Есть массив из 20 натуральных чисел от 1 до 10. Найти в массиве повторяющиеся числа и вывести на экран число и количество повторений. Постараться, чтобы числа на экране не повторялись, т.е. 1 раз выводилось “8 - 3 раза” (это самая сложная часть:)
+//            5 6 8 9 0 8 7 2 5 8 0
+//            5 - 2 раза
+//8 - 3 раза
+//0 - 2 раза
+
+    public static void countArrNambers()    {
+        Random random = new Random();
+
+        int[] numbers = new int[20];
+
+        // Создаем массив случайных чисел от 0 до 99
+        for(int i = 0; i < numbers.length; i++) {
+            numbers[i] = random.nextInt(10);
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println(); // просто перенос строки
+
+        Arrays.sort(numbers);
+        int currentNumber=numbers[0];
+        int countNumber=0;
+        System.out.println(); // просто перенос строки
+
+        for(int i = 0; i < numbers.length; i++){
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println("\n"); // просто перенос строки
+
+        for(int i = 0; i < numbers.length; i++) {
+
+            if(numbers[i]==currentNumber && i!=numbers.length-1){
+                countNumber+=1;
+            }
+            else if(i==numbers.length-1 && numbers[i]==currentNumber){
+                countNumber+=1;
+                System.out.println(currentNumber+" "+countNumber);
+            }
+            else {
+                System.out.println(currentNumber+" "+countNumber);
+                currentNumber=numbers[i];
+                countNumber=1;
+            }
+        }
+
+        System.out.println(); // просто перенос строки
     }
 }
 
