@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Homework1 {
+//    1.	Написать программу, проверяющую на четность число, введенное с клавиатуры.
     public static void pairNumber(){
         System.out.println("Введите число");
         Scanner in = new Scanner(System.in);
@@ -15,7 +16,8 @@ public class Homework1 {
             System.out.println("Число непарное");
         }
     }
-
+//2.	Дано натурально число а (a<100). Напишите программу,
+// выводящую на экран количество цифр в этом числе и сумму этих цифр.
     public static void sumNumbers(){
         int number=1984;
         System.out.println("количество символов в числе");
