@@ -26,6 +26,7 @@ public class Main {
 //        homework1.guryAvg();
 
         Homework2 homework2 = new Homework2();
+        homework2.reverceArray();
     }
 }
 
