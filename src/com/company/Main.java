@@ -29,5 +29,3 @@ public class Main {
         homework2.reverceArray();
     }
 }
-
-pu
