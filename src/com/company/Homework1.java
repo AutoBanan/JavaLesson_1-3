@@ -124,12 +124,12 @@ public class Homework1 {
         }
         DecimalFormat df = new DecimalFormat("###.##");
         double avgGrade=gradeSumm/8;
-        int g=3;
-        int y=2;
-        double divide=g/y;
+//        int g=3;
+//        int y=2;
+//        double divide=g/y;
         System.out.printf("%.2f", divide);
         System.out.printf("\n %.2f", avgGrade);
-        System.out.printf("\n %.3f", avgGrade);
-        System.out.println("\n "+(df.format(avgGrade)));
+//        System.out.printf("\n %.3f", avgGrade);
+//        System.out.println("\n "+(df.format(avgGrade)));
     }
 }
