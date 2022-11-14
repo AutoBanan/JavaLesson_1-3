@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -113,5 +114,29 @@ public class Homework3 {
         }
 
         System.out.println("\n Max repeated number is "+severalNumbers+" = "+maxNumberSum); // просто перенос строки
+    }
+//9.	Создать второй массив из четных элементов первого массива.
+    public static void countedArr(){
+        System.out.println("9. Создать второй массив из четных элементов первого массива.");
+        int[] numbers=new int[20];
+        ArrayList<Integer> num = new ArrayList();
+//        int[] num=new int[];
+        Random random=new Random();
+        for(int i = 0; i < numbers.length; i++) {
+            numbers[i] = random.nextInt(10);
+            System.out.print(numbers[i] + " ");
+        }
+        for(int i = 0; i < numbers.length; i++) {
+            if(numbers[i]%2==0){
+                num.add(numbers[i]);
+            }
+            else{
+                continue;
+            }
+        }
+        System.out.println();
+        for(int i = 0; i < num.size(); i++) {
+        System.out.print(num.get(i)+" ");
+        }
     }
 }
