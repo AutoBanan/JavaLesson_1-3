@@ -3,6 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Homework3 {
 //    7.	Найти среднее арифметическое элементов массива.
@@ -138,5 +139,29 @@ public class Homework3 {
         for(int i = 0; i < num.size(); i++) {
         System.out.print(num.get(i)+" ");
         }
+    }
+//    10.	Организовать беспрерывный ввод чисел с клавиатуры, пока пользователь не введет 0.
+//    После ввода нуля, показать на экран количество чисел, которые были введены, их общую сумму и
+//    среднее арифметическое. //    Подсказка: необходимо объявить переменную-счетчик, которая будет считать количество
+//    введенных чисел, и переменную, которая будет накапливать общую сумму чисел.
+    public void findAverage() {
+        System.out.println("\n\n10. Организовать беспрерывный ввод чисел с клавиатуры, пока пользователь не\n" +
+                " введет 0. После ввода нуля, показать на экран количество чисел, которые были введены, \n" +
+                "их общую сумму и среднее арифметическое. Подсказка: необходимо объявить переменную-счетчик,\n" +
+                " которая будет считать количество введенных чисел, и переменную,\n" +
+                " которая будет накапливать общую сумму чисел.");
+        Scanner scanner = new Scanner(System.in);
+        int number;
+        int sum = 0;
+        int counter = 0;
+        System.out.println("Enter numbers. After each number press \"Enter\".");
+        while(true) {
+            number = scanner.nextInt();
+            if(number == 0)
+                break;
+            sum += number;
+            counter++;
+        }
+        System.out.println("Average is " + (double)sum/counter + ". Sum = " + sum + ", counter = " + counter);
     }
 }
