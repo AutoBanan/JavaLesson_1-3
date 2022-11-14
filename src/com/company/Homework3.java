@@ -18,4 +18,7 @@ public class Homework3 {
         double avgAr=summ/(numbers.length);
         System.out.printf("\n AVG = %.2f", avgAr); // просто перенос строки
     }
+    public static void maxRepeated(){
+
+    }
 }
