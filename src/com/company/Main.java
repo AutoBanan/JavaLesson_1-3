@@ -32,5 +32,8 @@ public class Main {
 //        homework2.numCount();
 //        homework2.reverseNumber();
         homework2.countArrNambers();
+
+        Homework3 homework3=new Homework3();
+        homework3.avgArr();
     }
 }
