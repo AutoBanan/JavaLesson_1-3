@@ -15,7 +15,7 @@ public class Homework3 {
             summ=summ+numbers[i];
             System.out.print(numbers[i] + " ");
         }
-        double avgAr=summ/(numbers.length-1);
+        double avgAr=summ/(numbers.length);
         System.out.printf("\n AVG = %.2f", avgAr); // просто перенос строки
     }
 }
