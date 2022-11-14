@@ -35,5 +35,6 @@ public class Main {
 
         Homework3 homework3=new Homework3();
         homework3.avgArr();
+        homework3.maxRepeated();
     }
 }
