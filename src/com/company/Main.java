@@ -38,5 +38,6 @@ public class Main {
         homework3.maxRepeated();
         homework3.countedArr();
         homework3.findAverage();
+        homework3.depositeCalc();
     }
 }

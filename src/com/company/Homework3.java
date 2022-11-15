@@ -144,7 +144,7 @@ public class Homework3 {
 //    После ввода нуля, показать на экран количество чисел, которые были введены, их общую сумму и
 //    среднее арифметическое. //    Подсказка: необходимо объявить переменную-счетчик, которая будет считать количество
 //    введенных чисел, и переменную, которая будет накапливать общую сумму чисел.
-    public void findAverage() {
+    public static void findAverage() {
         System.out.println("\n\n10. Организовать беспрерывный ввод чисел с клавиатуры, пока пользователь не\n" +
                 " введет 0. После ввода нуля, показать на экран количество чисел, которые были введены, \n" +
                 "их общую сумму и среднее арифметическое. Подсказка: необходимо объявить переменную-счетчик,\n" +
@@ -163,5 +163,33 @@ public class Homework3 {
             counter++;
         }
         System.out.println("Average is " + (double)sum/counter + ". Sum = " + sum + ", counter = " + counter);
+    }
+//    11.	Создать депозитный калькулятор. В него ввести сумму вклада и процент по депозиту. Какой будет сумма вклада через N лет.
+    public static void depositeCalc(){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the deposite amount");
+        double amount= scanner.nextDouble();
+        System.out.println("Enter percent");
+        float percent=scanner.nextFloat()/100;
+        System.out.println("Enter years");
+        int years= scanner.nextInt();
+        double depositAmount=0;
+        System.out.println("Select 1 - without capitalisation, 2 - With capitalisation");
+        int option=scanner.nextInt();
+        if(option==1){
+            depositAmount=amount+((amount*percent)*years);
+            System.out.printf("Your deposit +%.2f", depositAmount);
+        } else if(option==2)
+        {
+
+            for (int i=0;i<years; i++){
+                amount=amount+(amount*percent);
+
+            }
+            System.out.printf("\n Your deposit +%.2f", amount);
+        } else {
+            System.out.println("Error- incorrect value");
+        }
+
     }
 }
