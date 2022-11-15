@@ -200,20 +200,39 @@ public class Homework3 {
         Scanner scanner=new Scanner(System.in);
         int iArrVol=scanner.nextInt();
         int jArrVol=(iArrVol*2);
+        int countOfTriangle=0;
+        int cou=0;
 //        String[] triangle=new String[iArrVol][jArrVol];
-        for (int i=1; i<=iArrVol; i++){
-            for(int j=0; j<=jArrVol; j++){
-                if(i==1 && j==(jArrVol/2)){
+        for (int i=0; i<iArrVol; i++){
+            for(int j=1; j<=jArrVol-1; j++){
+                if(i==0 && j==(jArrVol/2)){
+
                     System.out.print("^");
-                } else {
-                    System.out.print("_");
+
+                } else if (j>=(jArrVol-countOfTriangle)/2 && j<=countOfTriangle+1+((jArrVol-countOfTriangle)/2) && i!=0)
+                {
+//                    System.out.print(countOfTriangle+((jArrVol-countOfTriangle)/2)+" "+j+" ");
+                    System.out.print("^");
+                    cou+=1;
+                }
+                else {
+                    System.out.print(" ");
                     }
 
                 }
+            if(i==0){
+                countOfTriangle=1;
+            }
+            else{
+                countOfTriangle+=2;
+            }
+            System.out.print(" "+countOfTriangle+" "+cou+" " +((jArrVol-countOfTriangle)/2) +" "+(countOfTriangle+1+((jArrVol-countOfTriangle)/2)));
+            cou=0;
             System.out.println();
 
 
 
         }
+
     }
 }
