@@ -196,12 +196,13 @@ public class Homework3 {
 
 //    13.	Нарисовать треугольник из символов с числом рядов, определяемым пользователем (ввод с консоли).
     public static void triangle(){
+        System.out.println("\n13.Нарисовать треугольник из символов с числом рядов, определяемым пользователем (ввод с консоли).");
         System.out.println("Enter count of triangle rows");
         Scanner scanner=new Scanner(System.in);
         int iArrVol=scanner.nextInt();
         int jArrVol=(iArrVol*2);
         int countOfTriangle=0;
-        int cou=0;
+//        int cou=0;
 //        String[] triangle=new String[iArrVol][jArrVol];
         for (int i=0; i<iArrVol; i++){
             for(int j=1; j<=jArrVol-1; j++){
@@ -213,7 +214,7 @@ public class Homework3 {
                 {
 //                    System.out.print(countOfTriangle+((jArrVol-countOfTriangle)/2)+" "+j+" ");
                     System.out.print("^");
-                    cou+=1;
+//                    cou+=1;
                 }
                 else {
                     System.out.print(" ");
@@ -226,8 +227,9 @@ public class Homework3 {
             else{
                 countOfTriangle+=2;
             }
-            System.out.print(" "+countOfTriangle+" "+cou+" " +((jArrVol-countOfTriangle)/2) +" "+(countOfTriangle+1+((jArrVol-countOfTriangle)/2)));
-            cou=0;
+//            System.out.print(" "+countOfTriangle+" "+cou+" " +((jArrVol-countOfTriangle)/2) +
+//                    " "+(countOfTriangle+1+((jArrVol-countOfTriangle)/2)));
+//            cou=0;
             System.out.println();
 
 
