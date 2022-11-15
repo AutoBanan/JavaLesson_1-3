@@ -39,6 +39,7 @@ public class Main {
 //        homework3.countedArr();
 //        homework3.findAverage();
 //        homework3.depositeCalc();
-        homework3.triangle();
+        homework3.closeRulon();
+//        homework3.triangle();
     }
 }
