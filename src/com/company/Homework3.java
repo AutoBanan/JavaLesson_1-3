@@ -1,5 +1,6 @@
 package com.company;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
@@ -191,5 +192,28 @@ public class Homework3 {
             System.out.println("Error- incorrect value");
         }
 
+    }
+
+//    13.	Нарисовать треугольник из символов с числом рядов, определяемым пользователем (ввод с консоли).
+    public static void triangle(){
+        System.out.println("Enter count of triangle rows");
+        Scanner scanner=new Scanner(System.in);
+        int iArrVol=scanner.nextInt();
+        int jArrVol=(iArrVol*2);
+//        String[] triangle=new String[iArrVol][jArrVol];
+        for (int i=1; i<=iArrVol; i++){
+            for(int j=0; j<=jArrVol; j++){
+                if(i==1 && j==(jArrVol/2)){
+                    System.out.print("^");
+                } else {
+                    System.out.print("_");
+                    }
+
+                }
+            System.out.println();
+
+
+
+        }
     }
 }

@@ -34,10 +34,11 @@ public class Main {
 //        homework2.countArrNambers();
 
         Homework3 homework3=new Homework3();
-        homework3.avgArr();
-        homework3.maxRepeated();
-        homework3.countedArr();
-        homework3.findAverage();
-        homework3.depositeCalc();
+//        homework3.avgArr();
+//        homework3.maxRepeated();
+//        homework3.countedArr();
+//        homework3.findAverage();
+//        homework3.depositeCalc();
+        homework3.triangle();
     }
 }
