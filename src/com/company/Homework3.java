@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Homework3 {
 //    7.	Найти среднее арифметическое элементов массива.
     public static void avgArr(){
@@ -202,7 +203,12 @@ public class Homework3 {
         System.out.println("\n12.Имеется кусок ткани длиной M метров. " +
                 "От него последовательно отрезают куски равной длины.\n" +
                 "Все данные по использованию ткани заносятся в компьютер. Компьютер должен выдать сообщение о том, \n" +
-                "что материала не хватает, если будет затребован кусок ткани больше длины, чем имеется.");
+                "что материала не хватает, если будет затребован кусок ткани больше длины, чем имеется.\n");
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the length of rulon");
+        float rulonLength=scanner.nextFloat();
+        System.out.println("Enter  part length");
+        float partLength=scanner.nextFloat();
     }
 //
 //    13.	Нарисовать треугольник из символов с числом рядов, определяемым пользователем (ввод с консоли).
@@ -249,4 +255,24 @@ public class Homework3 {
         }
 
     }
+    public static void exepter(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите длину ткани (в метрах): ");
+        double length = scanner.nextDouble();
+        System.out.print("Введите длину отрезка (в метрах): ");
+        double pieceLength = scanner.nextDouble();
+
+        try {
+            if (pieceLength > length) {
+                throw new Exception("Материала не хватает");
+            }
+            int piecesCount = (int) (length / pieceLength);
+            double remainder = length % pieceLength;
+            System.out.printf("Количество отрезков: %d%n", piecesCount);
+            System.out.printf("Остаток ткани: %.2f м%n", remainder);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 }
